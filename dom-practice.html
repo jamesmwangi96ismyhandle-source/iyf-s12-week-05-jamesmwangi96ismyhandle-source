@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Practice - Lessons 9 and 10</title>
+</head>
+<body>
+  <header>
+    <h1 id="main-header">DOM Practice Page</h1>
+    <nav>
+      <ul id="nav-list">
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#">About</a></li>
+        <li><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article>
+      <h2>Article Title</h2>
+      <p class="content">First paragraph of content.</p>
+      <p class="content">Second paragraph of content.</p>
+      <p>Third paragraph without class.</p>
+    </article>
+
+    <section>
+      <h2>Contact Form</h2>
+      <form id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your name">
+        <input type="email" id="email" name="email" placeholder="Your email">
+        <button type="submit">Submit</button>
+      </form>
+      <div id="counter-area">
+        <p>Count: <span id="count">0</span></p>
+        <button id="inc-btn">+</button>
+        <button id="dec-btn">-</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Footer paragraph.</p>
+  </footer>
+
+  <script src="dom.js"></script>
+</body>
+</html>
