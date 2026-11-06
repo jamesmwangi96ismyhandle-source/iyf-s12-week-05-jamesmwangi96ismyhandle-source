@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><body>
+<button id="toggle-btn">Hide / Show Images</button>
+<img src="https://via.placeholder.com/100" alt="demo1">
+<img src="https://via.placeholder.com/100" alt="demo2">
+<script>
+let hidden = false;
+document.getElementById('toggle-btn').addEventListener('click', () => {
+  hidden = !hidden;
+  document.querySelectorAll('img').forEach(img => img.classList.toggle('hidden', hidden));
+});
+</script>
+<style>.hidden{display:none;}</style>
+</body></html>

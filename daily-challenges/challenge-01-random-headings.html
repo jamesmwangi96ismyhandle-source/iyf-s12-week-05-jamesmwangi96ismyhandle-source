@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><body>
+<h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3>
+<button id="color-btn">Randomize Headings</button>
+<script>
+document.getElementById('color-btn').addEventListener('click', () => {
+  const random = () => '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6,'0');
+  document.querySelectorAll('h1,h2,h3').forEach(h => h.classList.remove('x'));
+  document.querySelectorAll('h1,h2,h3').forEach(h => h.style.color = random());
+});
+</script></body></html>

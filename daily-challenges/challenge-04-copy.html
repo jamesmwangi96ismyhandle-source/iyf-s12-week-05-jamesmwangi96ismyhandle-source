@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><body>
+<div id="source">Hello from source!</div>
+<div id="target">Target empty</div>
+<button id="copy-btn">Copy to Target</button>
+<script>
+document.getElementById('copy-btn').addEventListener('click', () => {
+  document.getElementById('target').textContent = document.getElementById('source').textContent;
+});
+</script></body></html>

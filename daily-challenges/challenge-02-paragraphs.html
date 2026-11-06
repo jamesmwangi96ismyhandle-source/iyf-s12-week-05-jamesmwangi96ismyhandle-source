@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><body>
+<button id="add-btn">Add Paragraph</button>
+<div id="paras"></div>
+<script>
+let n = 0;
+const box = document.getElementById('paras');
+document.getElementById('add-btn').addEventListener('click', () => {
+  n++;
+  const p = document.createElement('p');
+  p.textContent = `Paragraph ${n}`;
+  const del = document.createElement('button');
+  del.textContent = 'Delete';
+  del.addEventListener('click', () => p.remove());
+  p.appendChild(del);
+  box.appendChild(p);
+});
+</script></body></html>
